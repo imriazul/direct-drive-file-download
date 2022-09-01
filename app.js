@@ -17,7 +17,6 @@ function setStatus(status, error = false) {
 function go() {
     const urlField = document.getElementById("input");
     var linkId = urlField.value;
-    console.log('link', linkId)
     var idExtractor = /\/d\/(.+?)(?:\/|#|\?|$)/;
     var result = idExtractor.exec(linkId);
     var outputBox = document.getElementById("output");
