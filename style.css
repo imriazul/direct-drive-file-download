@@ -1,0 +1,41 @@
+.title {
+    font-size: 1.6em;
+    margin: 15px 10px 10px;
+}
+
+.sub {
+    font-size: 0.5em;
+    color: #444;
+    vertical-align: middle;
+}
+.container{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 5%;
+}
+#button {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+    padding: 10px 18px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 3px;
+    background: rgb(52, 204, 255);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 0px #b5b5b5;
+}
+
+#input, #output {
+    font-size: 1.1em;
+    display:block;
+    width:100%;
+    padding: 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 3px;
+}
+
+#help-text {
+    font-weight: 600;
+    margin: 10px;
+}
