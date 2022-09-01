@@ -39,3 +39,11 @@
     font-weight: 600;
     margin: 10px;
 }
+#copy-right{
+    text-align: center;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: rgba(6, 130, 254, 0.905);
+}
