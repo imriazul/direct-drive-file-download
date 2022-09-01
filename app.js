@@ -1,5 +1,4 @@
 window.onload = setup;
-
 function setup() {
     document.getElementById("button").addEventListener("click", go);
     document.getElementById("output").addEventListener("click", copy);
@@ -7,9 +6,7 @@ function setup() {
 
 function setStatus(status, error = false) {
     var helpText = document.getElementById("help-text");
-
     helpText.innerText = status;
-
     if (error) {
         helpText.style.color = "darkred";
     } else {
@@ -18,7 +15,7 @@ function setStatus(status, error = false) {
 }
 
 function go() {
-    const urlField = document.getElementById("input")
+    const urlField = document.getElementById("input");
     var linkId = urlField.value;
     console.log('link', linkId)
     var idExtractor = /\/d\/(.+?)(?:\/|#|\?|$)/;

@@ -8,10 +8,12 @@
     color: #444;
     vertical-align: middle;
 }
-.container{
+
+.container {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 5%;
 }
+
 #button {
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
@@ -26,24 +28,31 @@
     box-shadow: 0 2px 3px 0px #b5b5b5;
 }
 
-#input, #output {
+#input,
+#output {
     font-size: 1.1em;
-    display:block;
-    width:100%;
+    display: block;
+    width: 100%;
     padding: 10px;
     border: 1px solid #b5b5b5;
     border-radius: 3px;
+}
+
+input:focus {
+    border: 3px solid #555;
 }
 
 #help-text {
     font-weight: 600;
     margin: 10px;
 }
-#copy-right{
+
+#copy-right {
     text-align: center;
     font-weight: 600;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgba(6, 130, 254, 0.905);
 }
