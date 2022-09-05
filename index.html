@@ -38,15 +38,21 @@
                     </div>
                     <div class="modal-footer flex justify-content-around bg-success">
                         <i class="fa-solid fa-square-share-nodes icons"></i>
-                        <i class="fa-solid fa-circle-arrow-down icons"></i>
-                        <i class="fa-solid fa-circle-down icons"></i>
-                        <i class="fa-regular fa-copy icons"></i>
+                        <i class="fa-solid fa-circle-down icons" onclick="downloadFunction()"></i>
+                        <i class="fa-regular fa-copy icons" onclick="copyFunction()" data-bs-placement="top" data-bs-title="Tooltip on top"></i>
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="m-4 text-center text-black position-absolute bottom-0 start-50 translate-middle-x">
+            &copy; 2022 <a class="text-warning fw-bolder text-decoration-none" href="https://www.banglatechdoctor.xyz/">Bangla Tech Doctor</a>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

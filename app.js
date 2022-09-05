@@ -1,7 +1,6 @@
 window.onload = setup;
 function setup() {
-    document.getElementById('inputUrl').addEventListener('input', generateLink)
-    document.getElementById("output").addEventListener("click", copy);
+    document.getElementById('inputUrl').addEventListener('input', generateLink);
 }
 
 function setStatus(status, error = false) {
@@ -13,7 +12,7 @@ function setStatus(status, error = false) {
         helpText.style.color = "#227300";
     }
 }
-
+let finalDownLink = '';
 function generateLink() {
     const showLink = document.getElementById('direct-link')
     const buttonGen = document.getElementById("button")
@@ -51,12 +50,30 @@ function generateLink() {
         urlField.style.borderColor = "green";
         buttonGen.disabled = false;
     }
-    var finalLink = "https://drive.google.com/u/0/uc?id=" + result[1] + "&export=download&confirm=t&uuid=" + ren1 + ("-") + ren2 + ("-") + ren3 + ("-") + ren4 + ("-") + ren5;
-    // outputBox.disabled = false;
-    // outputBox.value = finalLink;
+    const finalLink = "https://drive.google.com/u/0/uc?id=" + result[1] + "&export=download&confirm=t&uuid=" + ren1 + ("-") + ren2 + ("-") + ren3 + ("-") + ren4 + ("-") + ren5;
+
+    finalDownLink = finalLink;
     showLink.innerText = finalLink;
     // setStatus("Success! Click the output link to copy it to your clipboard");
 }
+
+function copyFunction(){
+    window.open("https://facebook.com", '_blank').focus();
+    console.log("copy btn clicked")
+}
+function copyFunction() {
+    const modalTitle = document.getElementById('link-dialogBoxLabel');
+    navigator.clipboard.writeText(finalDownLink);
+    modalTitle.style.color = 'green'
+    modalTitle.innerText = 'Link Copied Success'
+    
+  }
+
+function downloadFunction(){
+    window.open(finalDownLink, "_blank");
+    console.log('download button clicked')
+}
+
 
 // function copy() {
 //     if (this.disabled) {

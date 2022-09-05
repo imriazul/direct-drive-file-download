@@ -43,6 +43,12 @@ a {
     color: rgba(6, 130, 254, 0.905);
 }
 .icons{
+    cursor: pointer;
     font-size: 30px;
     color: white;
 }
+/* .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+} */
