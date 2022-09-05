@@ -1,4 +1,4 @@
-.title {
+.titles {
     font-size: 1.6em;
     margin: 15px 10px 10px;
 }
@@ -9,12 +9,12 @@
     vertical-align: middle;
 }
 
-.container {
+.containers {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 5%;
 }
 
-#button {
+/* #button {
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2em;
@@ -26,9 +26,9 @@
     color: white;
     cursor: pointer;
     box-shadow: 0 2px 3px 0px #b5b5b5;
-}
+} */
 
-#input,
+#inputUrl,
 #output {
     font-size: 1.1em;
     display: block;

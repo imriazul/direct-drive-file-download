@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Direct Download</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body>
     <main>
-        <div class="container">
-            <div class="title">Enter your sharing URL:</div>
-            <input id="input" type="text" onfocus="setStatus('', false)">
+        <div class="containers">
+            <div class="titles">Enter your sharing URL:</div>
+            <input id="inputUrl" type="text" onfocus="setStatus('', false)">
             <div id="help-text"></div>
-            <button id="button">Create Link</button>
-            <div class="title">Direct Downloadable link:</div>
+            <div class="text-center">
+                <button id="button" class="btn btn-success px-4 py-2 fw-bolder" disabled data-bs-toggle="modal"
+                    data-bs-target="#link-dialogBox">Generate Direct Link</button>
+            </div>
+            <div class="titles">Direct Downloadable link:</div>
             <input id="output" type="text" readonly="" disabled="">
             <p id="copy-right">Created by: <a href="https://www.banglatechdoctor.xyz/">BanglaTechDoctor</a></p>
         </div>
     </main>
-<script src="app.js"></script>
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="link-dialogBox" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="link-dialogBoxLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="link-dialogBoxLabel">Your Direct Link Ready</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="direct-link" class="modal-body col-10 text-truncate">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+</body>
+
 </html>
 
-
-
-<!-- djajajghadghajkdfjadghjfg? -->
+<!-- real time input field tracker https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event -->
