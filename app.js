@@ -20,9 +20,8 @@ function generateLink() {
     var linkId = urlField.value;
     var idExtractor = /\/d\/(.+?)(?:\/|#|\?|$)/;
     var result = idExtractor.exec(linkId);
-    // var outputBox = document.getElementById("output");
 
-    // I am testing new things
+    // link extention generateing
     function makeid(rendomlenngth) {
         var linkText = '';
         var characters = '345abcdefghjk0123456789mnopqrstuvwxyz123456789';
@@ -39,14 +38,13 @@ function generateLink() {
     const ren4 = makeid(4);
     const ren5 = makeid(12);
     if (!result) {
-        // outputBox.value = "";
         setStatus("⚠⚠ Invalid URL ⚠⚠", true);
-        // outputBox.disabled = true;
         buttonGen.disabled = true;
         urlField.style.borderColor = "red"
         return;
     }
     else {
+        setStatus("", false);
         urlField.style.borderColor = "green";
         buttonGen.disabled = false;
     }
@@ -54,7 +52,6 @@ function generateLink() {
 
     finalDownLink = finalLink;
     showLink.innerText = finalLink;
-    // setStatus("Success! Click the output link to copy it to your clipboard");
 }
 
 function copyFunction(){
@@ -73,21 +70,3 @@ function downloadFunction(){
     window.open(finalDownLink, "_blank");
     console.log('download button clicked')
 }
-
-
-// function copy() {
-//     if (this.disabled) {
-//         return;
-//     }
-
-//     this.select();
-//     var copied = document.execCommand("copy");
-
-//     if (copied) {
-//         setStatus("Link copied to clipboard!");
-//     } else {
-//         setStatus("Couldn't copy link to clipboard. Please copy it manually.", true);
-//     }
-// }
-
-// https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
