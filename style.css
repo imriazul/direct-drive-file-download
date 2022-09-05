@@ -14,20 +14,6 @@
     margin: 5%;
 }
 
-/* #button {
-    display: block;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.2em;
-    padding: 10px 18px;
-    margin: 15px auto;
-    border: none;
-    border-radius: 3px;
-    background: rgb(52, 204, 255);
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 2px 3px 0px #b5b5b5;
-} */
-
 #inputUrl,
 #output {
     font-size: 1.1em;
@@ -55,4 +41,8 @@ input:focus {
 a {
     text-decoration: none;
     color: rgba(6, 130, 254, 0.905);
+}
+.fa-regular, .fa-brands{
+    font-size: 30px;
+    color: white;
 }
