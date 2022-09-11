@@ -54,19 +54,20 @@ function generateLink() {
     showLink.innerText = finalLink;
 }
 
-function copyFunction(){
-    window.open("https://facebook.com", '_blank').focus();
-    console.log("copy btn clicked")
-}
 function copyFunction() {
     const modalTitle = document.getElementById('link-dialogBoxLabel');
     navigator.clipboard.writeText(finalDownLink);
     modalTitle.style.color = 'green'
     modalTitle.innerText = 'Link Copied Success'
     
-  }
+}
+
+function crossBtnWork(){
+    const modalTitle = document.getElementById('link-dialogBoxLabel');
+    modalTitle.style.color = 'black';
+    modalTitle.innerText = 'Your Direct Link Ready';
+}
 
 function downloadFunction(){
     window.open(finalDownLink, "_blank");
-    console.log('download button clicked')
 }
